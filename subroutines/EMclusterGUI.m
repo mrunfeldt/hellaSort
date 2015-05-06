@@ -2,6 +2,7 @@
 % % % "EMclusterGUI" - GUI for using GAussian Mixture model to cluster data
 % % % % % calls "gausEMcluster" [[can be replaced with different cluster method % % 
 % updated: MJRunfeldt 2015_03_10
+% Dimensions for Clustering based on (1) however many waveform PCs are need to explain "perVariance" percent of variance, which is a hardcoded variable at top of function, augmented with (2) several descriptors of waveform (e.g. maxAmp,timeToPeak). See line 31 to add/remove clusterin dimensions.
 
 % "clustVal": waitforbuttonpress; clustVal=double(get(f2H,'CurrentCharacter')) ;
 % "theData": spikes/nodes in PC space (nNodes x nPCs)
